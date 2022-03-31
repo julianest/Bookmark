@@ -2,8 +2,8 @@
 :root{
     --Soft-Blue: hsl(231, 69%, 60%);
     --Soft-Red: hsl(0, 94%, 66%);
-    --Grayish-Blue: hsl(229, 8%, 60%)
-    --Very-Dark Blue: hsl(229, 31%, 21%)
+    --Grayish-Blue: hsl(229, 8%, 60%);
+    --Very-Dark-Blue: hsl(229, 31%, 21%);
 }
 
 *{
@@ -56,12 +56,45 @@ width: 50%;
 }
     .sec1Art div h1{
         font-weight: bold;
+        color: var(--Very-Dark-Blue);
         margin-bottom: 5%;
     }
     .sec1Art div p{
-        color: rgb(167, 166, 166);
+        color: var(--Grayish-Blue);
         margin-bottom: 6%;
     }
+    .sec1Art div button{
+        box-shadow: var(--Grayish-Blue);
+        width: 30%;
+        height: 52px;
+        font-size: 13px;
+        margin-left: 0.5%;
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+}
+            .sec1Art div button.btn3{
+                background-color: var(--Soft-Blue);
+                color: white;
+                border-color: var(--Soft-Blue);
+            }
+            .sec1Art div button.btn3:hover{
+                background-color: white;
+                border-color: var(--Soft-Blue);
+                color: var(--Soft-Blue);
+            }
+            .sec1Art div button.btn4{
+                background-color: rgba(247, 247, 247, 1);
+                color: var(--Very-Dark-Blue);
+                border-color: rgba(247, 247, 247, 1);
+            }
+            .sec1Art div button.btn4:hover{
+                background-color: white;
+                border-color: var(--Very-Dark-Blue);
+                color: var(--Very-Dark-Blue);
+            }    
     .pantalla1{
         position: absolute;
         z-index: 1;
@@ -77,6 +110,9 @@ width: 50%;
         border-radius: 100px 0px 0px 100px;
         position: relative;
         z-index: 0;
-        border-color: var(--Soft-Blue);
-        
-    }
+        border-color: var(--);
+        -webkit-border-radius: 100px 0px 0px 100px;
+        -moz-border-radius: 100px 0px 0px 100px;
+        -ms-border-radius: 100px 0px 0px 100px;
+        -o-border-radius: 100px 0px 0px 100px;
+}

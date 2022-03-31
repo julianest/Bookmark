@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital@0;1&display=swap');
+:root{
+    --Soft-Blue: hsl(231, 69%, 60%);
+    --Soft-Red: hsl(0, 94%, 66%);
+    --Grayish-Blue: hsl(229, 8%, 60%)
+    --Very-Dark Blue: hsl(229, 31%, 21%)
+}
+
+*{
+    font-family: 'Rubik', sans-serif;
+}
+
+.d-flex{
+    display: flex;
+    width: 45%;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+}
+.opcionNav{
+    text-decoration: none;
+    font-weight: 400;
+    text-decoration: none;
+    color: black;
+    
+}
+.opcionNav:hover{
+    color: red;
+    
+}
+.btn-outline-success{
+    background-color: red;
+    color: white;
+    border-color: red;
+    box-shadow: black;
+    font-weight: bold;
+    width: 29%;
+
+}
+.btn-outline-success:hover{
+    background-color: white;
+    border-color: red;
+    color: red;
+}
+.sec1{
+    display: flex;
+    flex-wrap: row;
+    width: 100%;
+}
+
+.sec1Art{
+display: flex;
+flex-direction: column;
+margin-top: 5%;
+width: 50%;
+}
+    .sec1Art div h1{
+        font-weight: bold;
+        margin-bottom: 5%;
+    }
+    .sec1Art div p{
+        color: rgb(167, 166, 166);
+        margin-bottom: 6%;
+    }
+    .pantalla1{
+        position: absolute;
+        z-index: 1;
+        width: 30em;
+        height: 20em;
+    }
+    .semi-circulo-1 {
+        width: 350px;
+        height: 200px;
+        border: 1px solid var(--Soft-Blue);
+        margin: 30% 10% 0% 30%;
+        background: var(--Soft-Blue);
+        border-radius: 100px 0px 0px 100px;
+        position: relative;
+        z-index: 0;
+        border-color: var(--Soft-Blue);
+        
+    }

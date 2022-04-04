@@ -50,24 +50,29 @@ btn3.addEventListener("click", ()=>{
 function crearTemplate (datos){
     const {img, alt, h, p}=datos;
     template.innerHTML= 
-    `
-<section class="sec3">
-    <article class="sec3Art">
-    <div>
-        <img src="${img} " class="pantalla2" alt="${alt} ">
-        <div class="semi-circulo-2"></div>
-    </div>
+    `<article class="col-md-10 offset-md-1">  
+      <div class="row"> 
+        <div class="col-sm-12 col-md-6 align-self-center subsection">
+          <div style="position:relative">
+            <img src="${img}" alt="${alt}" class="img-fluid">
+            <div class="semi-circulo smc-2"></div>
+          </div>     
+        </div> 
+        <div class="col-sm-12 col-md-6 align-self-center subsection">
+          <div class="row">
+            <h2>${h}</h2>
+          </div>
+          <div class="row">
+          <p>${p} </p>
+          </div>
+          <div class="row">
+            <div class="col">
+              <button class="btn btn3">More info</button>
+            </div>
+          </div>
+        </div>        
+      </div>
     </article>
-    <article class="sec3Art">
-    <div style="margin-left:10%">
-        <h2>${h}</h2>
-        <p>${p} </p>
-    </div>
-    <div>
-        <button type="button" class="btn btn-primary" style="margin-left:10%" id="btnAcord">More info</button>
-    </div>
-    </article>
-</section>
 `
 };
 
